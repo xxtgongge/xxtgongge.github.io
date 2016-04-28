@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>图片</title>
+  <style>
+    div{
+      width: 700px;
+    height: 800px;
+    border:10px solid white;
+    box-shadow: 0px 0px 30px 0px #0ff;
+   overflow:hidden;  
+     position: absolute;
+    }
+    div img{
+     transition:all.3s ;
+      transform:scale(1)
+
+     
+    }
+    div:hover img{
+      
+ cursor:pointer;
+     transform:scale(0.5)
+    }
+    div figcaption{
+      
+      position:absolute;
+      text-align:center;
+      left:0;
+      z-index:3;
+      bottom:0;
+      background-color:blue;
+      height: 20px;
+      width: 100%;
+      color:rgba(0,50,0,0)
+        
+      
+      
+    }
+    div:hover figcaption{
+      color:rgba(0,50,0,1);
+      background-color:rgba(255,0,255,0.3);
+    }
+    figcaption{
+      font-style:italic;
+       font-weight:500;
+     text-indent:1em;
+      letter-spacing:5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="a">
+    <figcaption><strong>叮当猫</strong></figcaption>
+    <img src="http://image.cnsc8.com/tupian_201411/Big_Pic/rOKCJN5teR.jpg" alt="">
+  </div>
+</body>
+</html>
